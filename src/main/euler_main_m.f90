@@ -106,7 +106,7 @@ contains
                 '|Prob|Answer|Tspan(s)|Relative Difficulty|'
             write (iunit, '(a)') repeat(c_aligned, 4)//'|'
 
-            fmt = "('|', i6, '|', a20, '|', f10.6, '|', a25, '|')"
+            fmt = "('|', i6, '|', a20, '|', f13.6, '|', a25, '|')"
             diff_ = tspan/(tsum/nop)
             print_all_answers: do i = 1, nop
                 x = compute_diff(diff_(i), maxval(diff_), minval(diff_))
